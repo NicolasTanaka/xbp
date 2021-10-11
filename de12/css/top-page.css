@@ -1,0 +1,171 @@
+@charset "shift_jis";
+
+/* -------------------------------------------------------------
+
+[1] レイアウトに関する指定
+[2] ヘッダーブロック内に関する指定
+[3] グローバルナビ内に関する指定
+[4] フッターブロック内に関する指定
+[5] CSSデザインサンプルリンク指定
+
+----------------------------------------------------------------
+CSSデザインサンプ [ URL ] http://www.css-designsample.com
+------------------------------------------------------------- */
+
+
+/* 一括で全ての要素の余白をゼロに指定 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 全体的なリンク */
+
+a:link,
+a:visited,
+a:hover,
+a:active { text-decoration: underline; }
+
+a:link { color: #0cf; }
+
+a:visited { color: #c9f; }
+
+a:hover { color: #f00; }
+
+a:active { color: #f00; }
+
+/* -------------------------------------------------------------
+   [1] レイアウトに関する指定 */
+
+body {
+  font-size: 90%;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding:0;
+  margin: 0;
+  background-color: #eee;
+}
+
+#wrapper {
+  text-align: left;
+  margin-top: 100px;
+}
+
+#header {
+  height: 280px;
+  background: #000 url(img/mono18pl.jpg) no-repeat 100% 50%;
+  color: #eee;
+}
+
+#header-inner {
+  height: 255px;
+  margin-right: 400px;
+  padding: 20px 0 5px 20px;
+  overflow: auto;
+}
+
+#globalnavi {
+  width: 100%;
+  padding: 5px 0;
+  background-color: #fff;
+}
+
+#contents {
+  padding: 2em 4em;
+  background-color: #fff;
+}
+
+#footer {
+  padding: 5px 20px 0;
+  border-top: 1px solid #000;
+}
+
+/* -------------------------------------------------------------
+   [2] ヘッダーブロック内に関する指定 */
+   
+h1 {
+  font-size: 100%;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+/* サイトタイトル */
+#header .logo {
+  font-size: 150%;
+  font-weight: normal;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #999;
+}
+
+h3,
+h4,
+h5,
+h6 { margin-top: 2em; }
+
+#header p {
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+}
+
+/* -------------------------------------------------------------
+   [3] グローバルナビ内に関する指定 */
+
+#globalnavi ul {
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+#globalnavi li {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+#globalnavi a {
+  text-decoration: none;
+  padding-left: 2px;
+  border-left: 3px solid #666;
+  color: #000;
+}
+
+#globalnavi a:hover {
+  text-decoration: none;
+  border-left: 15px solid #f00;
+  color: #f00;
+}
+
+/* -------------------------------------------------------------
+   [4] フッターブロック内に関する指定 */
+#footer p {
+  text-align: right;
+  margin-bottom: 0.5em;
+}
+
+/* -------------------------------------------------------------
+   [5] CSSデザインサンプルリンク指定 */
+#footer #cds { margin: 0; }
+
+#footer #cds,
+#footer #cds a,
+#footer #cds a:hover {
+  font-size: 85%;
+  text-decoration: none;
+  color: #999;
+}
